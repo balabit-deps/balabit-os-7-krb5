@@ -1,3 +1,14 @@
+krb5 (1.16-2ubuntu0.1) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Authenticated kadmin with permission to add principals
+    to an LDAP Kerberos can DoS or bypass DN container check.
+    - debian/patches/CVE-2018-5729-CVE-2018-5730.patch: Fix flaws in LDAP DN
+      checking
+    - CVE-2018-5729
+    - CVE-2018-5730
+
+ -- Eduardo Barretto <eduardo.barretto@canonical.com>  Fri, 11 Jan 2019 13:48:01 -0200
+
 krb5 (1.16-2build1) bionic; urgency=high
 
   * No change rebuild against openssl1.1.
