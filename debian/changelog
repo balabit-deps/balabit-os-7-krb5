@@ -1,3 +1,12 @@
+krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Unbounded recursion
+    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1
+      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.
+    - CVE-2020-28196
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300
+
 krb5 (1.16-2ubuntu0.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: Authenticated kadmin with permission to add principals
